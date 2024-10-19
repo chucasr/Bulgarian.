@@ -301,8 +301,7 @@ footer p {
   font-size: 1.3rem; /* サブタイトルのサイズを調整 */
   color: #555; /* 色を設定 */
 }
-/* バイル対応 */
-/* タブレット対応 */
+/* バイル対応 *//* タブレット対応 */
 @media (max-width: 768px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr); /* タブレット以下で2列に */
@@ -315,7 +314,7 @@ footer p {
   #screenshots img {
     width: 45%; /* タブレット以下で2列にする */
   }
-   header {
+      header {
     padding: 15px 0; /* スマホではヘッダーのパディングを少し減らす */
   }
   
@@ -329,6 +328,17 @@ footer p {
 
   nav ul li {
     margin: 0 10px; /* スマホでナビゲーション項目の余白を小さくする */
+  }
+     #hero h2 {
+    font-size: 1.5rem; /* モバイル版での小さめの見出し */
+  }
+
+  #hero p {
+    font-size: 1rem; /* モバイル版でのテキストサイズ */
+  }
+
+  .btn {
+    font-size: 0.9rem; /* ボタンのサイズもモバイルに合わせて調整 */
   }
 }
 
@@ -345,7 +355,7 @@ footer p {
   #screenshots img {
     width: 45%; /* スマホでも2列表示を維持 */
   }
-   header {
+      header {
     padding: 15px 0; /* スマホではヘッダーのパディングを少し減らす */
   }
   
@@ -359,6 +369,17 @@ footer p {
 
   nav ul li {
     margin: 0 10px; /* スマホでナビゲーション項目の余白を小さくする */
+  }
+     #hero h2 {
+    font-size: 1.5rem; /* モバイル版での小さめの見出し */
+  }
+
+  #hero p {
+    font-size: 1rem; /* モバイル版でのテキストサイズ */
+  }
+
+  .btn {
+    font-size: 0.9rem; /* ボタンのサイズもモバイルに合わせて調整 */
   }
 }
 /* セクションのアニメーション */
