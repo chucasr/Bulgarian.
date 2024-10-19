@@ -8,6 +8,7 @@ body {
   background-color: #000;
   color: #ffff;
   line-height: 1.6;
+   padding-top: 80px; /* デスクトップのヘッダー高さ分だけコンテンツを下に移動 */
 }
 
 .container {
@@ -314,6 +315,21 @@ footer p {
   #screenshots img {
     width: 45%; /* タブレット以下で2列にする */
   }
+   header {
+    padding: 15px 0; /* スマホではヘッダーのパディングを少し減らす */
+  }
+  
+  body {
+    padding-top: 60px; /* スマホでのヘッダーの高さ分だけコンテンツを下に移動 */
+  }
+  
+  header .app-title {
+    font-size: 2rem; /* スマホでタイトルを少し小さくする */
+  }
+
+  nav ul li {
+    margin: 0 10px; /* スマホでナビゲーション項目の余白を小さくする */
+  }
 }
 
 /* スマホ対応 */
@@ -328,6 +344,21 @@ footer p {
 
   #screenshots img {
     width: 45%; /* スマホでも2列表示を維持 */
+  }
+   header {
+    padding: 15px 0; /* スマホではヘッダーのパディングを少し減らす */
+  }
+  
+  body {
+    padding-top: 60px; /* スマホでのヘッダーの高さ分だけコンテンツを下に移動 */
+  }
+  
+  header .app-title {
+    font-size: 2rem; /* スマホでタイトルを少し小さくする */
+  }
+
+  nav ul li {
+    margin: 0 10px; /* スマホでナビゲーション項目の余白を小さくする */
   }
 }
 /* セクションのアニメーション */
