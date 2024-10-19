@@ -301,21 +301,33 @@ footer p {
   color: #555; /* 色を設定 */
 }
 /* バイル対応 */
+/* タブレット対応 */
 @media (max-width: 768px) {
   .features-grid {
     grid-template-columns: repeat(2, 1fr); /* タブレット以下で2列に */
   }
-     #screenshots img {
+  
+  #screenshots .screenshots-grid {
+    justify-content: space-between; /* タブレットでスペースを調整 */
+  }
+  
+  #screenshots img {
     width: 45%; /* タブレット以下で2列にする */
   }
 }
 
+/* スマホ対応 */
 @media (max-width: 480px) {
   .features-grid {
-    grid-template-columns: 1fr; /* スマホ以下で1列に */
+    grid-template-columns: repeat(2, 1fr); /* スマホでも2列表示 */
   }
-    #screenshots img {
-    width: 90%; /* スマホ以下で1列にする */
+  
+  #screenshots .screenshots-grid {
+    justify-content: space-between; /* スマホでの間隔を均等にする */
+  }
+
+  #screenshots img {
+    width: 45%; /* スマホでも2列表示を維持 */
   }
 }
 /* セクションのアニメーション */
